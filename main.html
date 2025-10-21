@@ -32,6 +32,10 @@
   th {
     background-color: #f2f2f2;
   }
+/* 表示専用免除権表の兄弟全員免除セルを黄色に */
+.exempt-table tr[data-multi="true"] td {
+  background-color: #fff8b3; /* 薄い黄色 */
+}
 </style>
 </head>
 <body>
@@ -144,5 +148,57 @@ rows.forEach(row => {
 });
 </script>
 
+<br>
+<br>
+<h2>免除権一覧（表示専用）</h2>
+
+<div class="table-wrapper">
+  <table class="exempt-table">
+    <thead>
+      <tr>
+        <th>係</th>
+        <th>免除される係</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-multi="true">
+        <td>代表委員</td>
+        <td>代表委員、地区リーダー、交安協(3年)、卒対(6年)</td>
+      </tr>
+      <tr data-multi="true">
+        <td>地区リーダー</td>
+        <td>代表委員、地区リーダー、交安協(3年)、卒対(6年)、正地区委員</td>
+      </tr>
+      <tr>
+        <td>正地区委員</td>
+        <td>地区リーダー、正地区委員</td>
+      </tr>
+      <tr>
+        <td>副地区委員</td>
+        <td>正地区委員、副地区委員</td>
+      </tr>
+      <tr>
+        <td>クラス委員</td>
+        <td>代表委員、クラス委員、交安協(3年)、卒対(6年)</td>
+      </tr>
+      <tr>
+        <td>交安協(3年)</td>
+        <td>代表委員、クラス委員、交安協(3年)、卒対(6年)</td>
+      </tr>
+      <tr>
+        <td>卒対(6年)</td>
+        <td></td> <!-- 免除権なし -->
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  
+<p style="margin-top:4px; font-size:14px; color:#333;">
+  <span style="background-color:#fff8b3; padding:2px 4px;">黄色</span> は兄弟全員免除を示します。
+</p>
+
+
+  
 </body>
 </html>
