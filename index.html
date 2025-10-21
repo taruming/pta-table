@@ -59,7 +59,7 @@
 
 <h2>PTA免除権シミュレータ</h2>
 <p style="margin-top:4px; font-size:14px; color:#333;">
-  やった係にチェックを入れると<span style="background-color:#eee; padding:2px 4px;"> グレー</span> になります。
+  やった係にチェックを入れると免除される係が<span style="background-color:#eee; padding:2px 4px;"> グレー</span> になります。
 </p>
 <!-- 入力用表 -->
 <div class="input-table-wrapper">
@@ -120,7 +120,12 @@
 </div>
 
 <!-- 表示用免除権表 -->
-<h2>免除権一覧（表示専用）</h2>
+<h2>免除権一覧（2025年度）</h2>
+
+<p style="margin-top:4px; font-size:14px; color:#333;">
+  <span style="background-color:#fff8b3; padding:2px 4px;">黄色</span> は兄弟全員免除を示します。
+</p>
+
 
 <div class="exempt-table-wrapper">
   <table class="exempt-table">
@@ -162,10 +167,6 @@
     </tbody>
   </table>
 </div>
-
-<p style="margin-top:4px; font-size:14px; color:#333;">
-  <span style="background-color:#fff8b3; padding:2px 4px;">黄色</span> は兄弟全員免除を示します。
-</p>
 
 <script>
 const exemptionRules = {
